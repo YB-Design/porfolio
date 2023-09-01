@@ -639,3 +639,95 @@ a {
     opacity: 1;
   }
 }
+
+
+/* CSS Document */
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles globaux pour tous les écrans */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Styles spécifiques pour les écrans larges */
+@media (min-width: 769px) {
+  body {
+    background-color: #f4f4f4;
+    background-image: url("image/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #BB2649;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .nav-links li a:hover {
+    background-color: #010b3e;
+    color: white;
+  }
+}
+
+/* Styles spécifiques pour les écrans plus petits (768px ou moins) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  nav {
+    height: 60px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 0;
+  }
+
+  .nav-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
