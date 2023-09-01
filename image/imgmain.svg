@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1918 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        font-family: VollkornRoman-Black, Vollkorn;
+        font-size: 100px;
+        font-variation-settings: 'wght' 900;
+        font-weight: 800;
+      }
+
+      .cls-7 {
+        font-family: Poppins-ExtraLight, Poppins;
+        font-size: 24px;
+        font-weight: 200;
+      }
+
+      .cls-8 {
+        letter-spacing: -.05em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-2" transform="translate(511.66 441.45)"><tspan class="cls-6"><tspan x="0" y="0">HELLO I AM </tspan><tspan class="cls-8" x="621.39" y="0">Y</tspan><tspan class="cls-1" x="679.79" y="0">O</tspan><tspan x="751.89" y="0">AN</tspan></tspan><tspan class="cls-6"><tspan x="146.2" y="120">PO</tspan><tspan class="cls-3" x="291.6" y="120">R</tspan><tspan class="cls-4" x="360.4" y="120">T</tspan><tspan x="429.7" y="120">FOLIO</tspan></tspan><tspan class="cls-7"><tspan x="326.4" y="268.8">scroll down for more</tspan></tspan></text>
+      <rect class="cls-5" width="1918" height="1080"/>
+    </g>
+  </g>
+</svg>

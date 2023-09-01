@@ -1,0 +1,637 @@
+@charset "utf-8";
+/* CSS Document */
+/*/* Reset default margin and padding */
+/* Reset default margin and padding */
+
+
+/* S/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+/* Set background color and font for the whole page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+background-image: url("image/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Poppins Medium */
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  src: url(' "font/Poppins-Regular.ttf"') format('truetype');
+}
+
+/* Montserrat Light */
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  src: url(' "font/Montserrat-Italic-VariableFont_wght.ttf"') format('truetype');
+}
+
+/* Roboto Medium */
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: url(' "font/Roboto-Medium.ttf"') format('truetype');
+}
+
+.headline {
+  font-family: 'Roboto', sans-serif;
+  font-size: 44pt;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30pt;
+  font-weight: 300;
+  margin-top: -20px;
+  margin-bottom: -36px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16pt;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* Navigation Bar */
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px; /* Set the height to 80px */
+  background-color: #BB2649;
+  font-family: 'Poppins', sans-serif;
+}}
+
+/* Navigation links */
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  padding: 0;
+background-color: transparent; 
+	  font-weight: bold; /* Add font-weight property */
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+}
+
+/* Navigation link text */
+.nav-links li a {
+  text-decoration: none;
+  color: #f4f4f4; /* White text color */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: transparent; /* Remove background color */
+  transition: background-color 0.3s, color 0.3s; /* Add transition effects */
+}
+
+/* Apply hover effect */
+.nav-links li a:hover {
+  background-color: #010b3e; /* Darker color on hover */
+  color: white; /* White text color on hover */
+}
+
+/* Home button */
+.nav-links .home-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Skills button */
+.nav-links .skills-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Add spacing between sections */
+section {
+  margin-bottom: 10rem; /* Adjust the value as needed */
+}
+
+
+
+.main-image {
+  width: 80%; /* Set the width to 80% of its container */
+  height: auto; /* Allow the height to adjust proportionally */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-height: 100%; /* Ensure the image does not exceed its container's height */
+}
+
+#contact h1 {
+  font-size: 3em;
+}
+
+
+
+
+.design-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+ 
+  background-size: cover;
+  background-position: center;
+}
+
+.project-heading {
+  text-align: center;
+  margin: 2rem 0;
+  color: white; /* Set text color */
+  font-size: 2.5rem; /* Adjust the font size as needed */
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between; /* Distribute items side by side */
+  gap: 1rem;
+  width: 100%; /* Ensure full width */
+}
+
+.image-column {
+  flex: 1; /* Distribute space evenly between columns */
+  padding: 1rem;
+ 
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.design-image {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 9:16 aspect ratio (1080 / 1920 * 100) */
+  overflow: hidden;
+}
+
+.design-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.design-image:hover {
+  transform: scale(1.05);
+}
+
+
+.image-container {
+  width: 100%; /* Adjust the width as needed */
+  padding-top: 56.25%; /* 9:16 aspect ratio (1080 / 1920 * 100) */
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Rest of your existing CSS */
+
+/* Adjust spacing between skill columns */
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap;
+  margin-top: 12rem; /* Adjust this value for top spacing */
+  margin-bottom: 12rem; /* Adjust this value for bottom spacing */
+  background-color: white;
+  padding-top: 6rem; /* Increase the top padding to push content down */
+  padding-bottom: 6rem; /* Increase the bottom padding to push content up */
+}
+
+/* Each individual skill column */
+.skill {
+  flex: 0 0 calc(30% - 2rem); /* Adjust the flex value to change the width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0; /* Adjust padding as needed */
+  text-align: center;
+}
+
+/* Skill description */
+.skill p {
+  font-size: 1.2rem;
+  color: #010b3e;
+  max-width: 270px; /* Adjust max-width for wider text column */
+  margin: 0 auto;
+}
+
+/* Skill icon */
+.skill img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem; /* Increase margin for more spacing */
+}
+
+/* Skill title */
+.skill h3 {
+	color: #010b3e;
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+  line-height: 1.2;
+}
+
+/* Contact Section */
+#contact.contact-me {
+  background-color: none;
+  padding: 1rem 0;
+}
+
+.contact-content {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100%; /* Make the container take the full height */
+}
+
+.contact-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: white;
+}
+
+.contact-info h2,
+.contact-info h3,
+.contact-info h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: white; /* Set the text color to white */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: white;
+}
+
+/* Style the email and phone number links as buttons */
+.contact-info h3 a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: transparent; /* No background color by default */
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.contact-info h3 a:hover {
+  background-color: #e94288; /* Pink background color on hover */
+}
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+ 
+  color: #BB2649;
+}
+/* Your existing CSS */
+
+
+/* Navigation Bar */
+nav {
+  /* Your nav styles */
+}
+
+/* Rest of your existing CSS */
+
+/* Additional styles for project pages */
+.project-details {
+  /* Project details styles */
+}
+
+.project-image img {
+  /* Project image styles */
+}
+
+.project-description {
+  /* Project description styles */
+}
+
+/* Footer */
+
+.footer {
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Adjust the social media icon styles */
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 20px; /* Increase the margin to 20px */
+  text-align: center;
+  line-height: 1;
+  transition: transform 0.3s, color 0.3s, background-color 0.3s; /* Add transition effects */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: transparent; /* Remove background color */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: white;
+  background-color:  #BB2649; /* Pink background color on hover */
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Reset some default margin and padding for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header styling */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  padding: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+
+/* Define the outermost white box */
+/* Define the outermost white box */
+.white-box {
+  width: 1440px;
+  height: 700px; /* Add 50px to the height */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Add a yellow border inside the white box */
+.inside-yellow-stroke {
+  width: 1336px;
+  height: 591px; /* Add 50px to the height */
+  border: 36px solid #e8c445; /* Yellow inside stroke */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the box precisely */
+  z-index: -1;
+}
+
+/* Finally, style the text content box */
+.text-white-box {
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  max-height: 456px; /* Set the maximum height for the text container */
+  overflow: hidden; /* Change this to "hidden" to remove scrollbars */
+  text-align: left;
+}
+
+
+
+}
+
+.headline {
+  font-size: 40pt;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333; /* Adjust the color as needed */
+}
+
+.sub-title {
+  font-size: 25pt;
+  font-weight: 300;
+  margin-top: -20px;
+  margin-bottom: -36px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-top: 1px;
+  padding-bottom: 5px;
+}
+
+.description-heading {
+  font-size: 16pt;
+  font-weight: normal;
+  margin: 50px 0 10px;
+}
+
+.description-text {
+  font-size: 16pt;
+  font-weight: normal;
+  margin: 7px 0;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -164px;
+	 padding-top: 10px;/* Adjust this value as needed */
+}
+.image-box img {
+  width: 100%;
+  height: auto; /* Automatically adjust the height based on the image aspect ratio */
+  object-fit: cover;
+}
+
+
+.image-box {
+
+  margin: 0 auto; /* Center the image within its container */
+  overflow: hidden;
+  position: relative;
+  margin-top: 0; /* Remove top margin */
+}
+
+.content-container {
+  background-color: transparent;
+  padding: 30px 0; /* Adjust top and bottom padding as needed */
+  text-align: center;
+}
+
+a {
+  outline: none; /* Remove outline on focus */
+  border: none; /* Remove border */
+}
+
+.hide-on-scroll {
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Slower transition duration */
+}
+
+.hide-on-scroll.hidden {
+  opacity: 0;
+	  transition: opacity 4s ease-in-out; 
+}
+
+.inside-yellow-stroke.page2 {
+  border-color: #6699cc; /* Change this to the color you want for page 2 */
+}
+
+.inside-yellow-stroke.page3 {
+  border-color: #e84f38; /* Change this to the color you want for page 3 */
+}
+
+.inside-yellow-stroke.page4 {
+  border-color: #ba966b; /* Change this to the color you want for page 4 */
+}
+
+.inside-yellow-stroke.page5 {
+  border-color: #05786b; /* Change this to the color you want for page 5 */
+}
+
+.inside-yellow-stroke.page6 {
+  border-color: #cc3347; /* Change this to the color you want for page 6 */
+}
+
+.main-image img {
+  width: 80;
+	  
+	  
+ .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: inline-block;
+	
+  text-decoration: none;
+}
+}
+
+.logo img {
+  width: 80px; /* Adjust the width as needed */
+  height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+  padding: 10px; /* Add padding around the logo */
+  object-fit: contain; /* Maintain the aspect ratio without stretching the image */
+}
+
+
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust as needed */
+  background-color: none;
+  color: white;
+}
+
+.animated-text {
+  display: flex;
+  align-items: center;
+}
+
+.text-container {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation-fill-mode: forwards;
+  font-size: 150px; /* Adjust font size as needed */
+}
+
+.text-container:nth-child(2) {
+  animation: slideFromLeft 3s ease-in-out 1s;
+}
+
+.text-container:nth-child(3) {
+  animation: slideFromRight 3s ease-in-out 1s;
+}
+
+@keyframes slideFromLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
