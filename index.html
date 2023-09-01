@@ -1,169 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>YB DESIGN PORTFOLIO</title>
-  <style>
-    /* Add a class for hiding content */
-    .hide-on-scroll {
-      opacity: 1; /* Start with full opacity */
-      transition: opacity 0.5s ease-in-out;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>YB DESIGN PORTFOLIO</title>
+<style>
+/* Add a class for hiding content */
+.hide-on-scroll {
+    opacity: 1; /* Start with full opacity */
+    transition: opacity 0.5s ease-in-out;
+}
+.hide-on-scroll.hidden {
+    opacity: 0; /* Set opacity to 0 to hide the element */
+}
+/* Background image style */
+body.background-image {
+background-image: url(" "image/background-image.jpg"");
+/* Additional background styles */
+}
+</style>
 
-    .hide-on-scroll.hidden {
-      opacity: 0; /* Set opacity to 0 to hide the element */
-    }
-
-    /* Background image style */
-    body.background-image {
-      background-image: url(" "image/background-image.jpg"");
-      /* Additional background styles */
-    }
-  </style>
-  <script>
-    function scrollToSection(sectionId) {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  </script>
 </head>
 <body class="background-image">
-  <header>
-    <nav>
-  <div class="logo">
-     <a href="index.html">
-         <img src="image/logoyb.svg" alt="YB Design Logo">
-  </a>
-</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-		  <li><a href="index.html#design-images">Portfolio</a></li> 
-        <li><a href="#" onclick="scrollToSection('skills')">Skills</a></li>
-        <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="home">
-		   <div class="hide-on-scroll">
-      <div class="main-image">
-        <img src="image/main-image.png" alt="Main Image">
-		  
-      </div>  
-			</div>   
+<header>
+  <nav>
+    <div class="logo"> <a href="index.html"> <img src="image/logoyb.svg" alt="YB Design Logo"> </a> </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#design-images">Portfolio</a></li>
+	  <li><a href="index.html#skills" >Skills</a></li>
+
 		
-
-
-   <section id="design-images" class="design-images">
-  <div class="project-heading">
-    <h1>Client Work</h1>
-  </div>
-  <div class="image-row">
-    <div class="image-column">
-      <a href="project1.html">
-        <div class="design-image">
-          <img src="image/lableindex1.jpg" alt="Design 1">
-        </div>
-      </a>
+     <li><a href="index.html#contact">Contact</a></li>
+		
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="home">
+    <div class="hide-on-scroll">
+      <div class="main-image"> <img src="image/mainimage.svg" alt="Main Image"> </div>
     </div>
-    <div class="image-column">
-      <a href="project2.html">
-        <div class="design-image">
-          <img src="image/lableindex2.jpg" alt="Design 2">
-        </div>
-      </a>
-    </div>
-    <div class="image-column">
-      <a href="project3.html">
-        <div class="design-image">
-          <img src="image/lableindex3.jpg" alt="Design 3">
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="project-heading">
-    <h1>Passion Projects</h1>
-  </div>
-  <div class="image-row">
-    <div class="image-column">
-      <a href="project4.html">
-        <div class="design-image">
-          <img src="image/lableindex4.jpg" alt="Design 4">
-        </div>
-      </a>
-    </div>
-    <div class="image-column">
-      <a href="project5.html">
-        <div class="design-image">
-          <img src="image/lableindex5.jpg" alt="Design 5">
-        </div>
-      </a>
-    </div>
-    <div class="image-column">
-      <a href="project6.html">
-        <div class="design-image">
-          <img src="image/lableindex6.jpg" alt="Design 6">
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-     <section id="skills">
+    <section id="design-images" class="design-images">
+      <div class="project-heading">
+        <h1>Client Work</h1>
+      </div>
+      <div class="image-row">
+        <div class="image-column"> <a href="project1.html">
+          <div class="design-image"> <img src="image/lableindex1.jpg" alt="Design 1"> </div>
+          </a> </div>
+        <div class="image-column"> <a href="project2.html">
+          <div class="design-image"> <img src="image/lableindex2.jpg" alt="Design 2"> </div>
+          </a> </div>
+        <div class="image-column"> <a href="project3.html">
+          <div class="design-image"> <img src="image/lableindex3.jpg" alt="Design 3"> </div>
+          </a> </div>
+      </div>
+      <div class="project-heading">
+        <h1>Passion Projects</h1>
+      </div>
+      <div class="image-row">
+        <div class="image-column"> <a href="project4.html">
+          <div class="design-image"> <img src="image/lableindex4.jpg" alt="Design 4"> </div>
+          </a> </div>
+        <div class="image-column"> <a href="project5.html">
+          <div class="design-image"> <img src="image/lableindex5.jpg" alt="Design 5"> </div>
+          </a> </div>
+        <div class="image-column"> <a href="project6.html">
+          <div class="design-image"> <img src="image/lableindex6.jpg" alt="Design 6"> </div>
+          </a> </div>
+      </div>
+    </section>
+    <section id="skills">
       <div class="skills-container">
-        <div class="skill">
-          <img src="image/iconlogo.svg" alt="Skill 1">
+        <div class="skill"> <img src="image/iconlogo.svg" alt="Skill 1">
           <h3>Logo design</h3>
-				<p>Masterfully crafting logos that breathe life into brand identity, embody values, and envision the future. Fusing innovation with strategic acumen to conjure visually resonant masterpieces that leave lasting impressions.</p>
+          <p>Masterfully crafting logos that breathe life into brand identity, embody values, and envision the future. Fusing innovation with strategic acumen to conjure visually resonant masterpieces that leave lasting impressions.</p>
         </div>
-        <div class="skill">
-          <img src="image/iconlayout.svg" alt="Skill 2">
+        <div class="skill"> <img src="image/iconlayout.svg" alt="Skill 2">
           <h3>Visual Layouts</h3>
-			<p>Curating visually engaging layouts that amplify user experience and effective communication. Proficient in structuring content and elements to ensure coherence, clarity, and enhanced engagement.</p>
+          <p>Curating visually engaging layouts that amplify user experience and effective communication. Proficient in structuring content and elements to ensure coherence, clarity, and enhanced engagement.</p>
         </div>
-        <div class="skill">
-          <img src="image/iconsm.svg" alt="Skill 3">
+        <div class="skill"> <img src="image/iconsm.svg" alt="Skill 3">
           <h3>Digital Branding</h3>
-				<p>Proficient in crafting social media visuals that ignite engagement and forge meaningful connections with the intended audience. Alongside a solid understanding of HTML website design, I adeptly transform my creative prowess into impactful web interfaces. </p>
+          <p>Proficient in crafting social media visuals that ignite engagement and forge meaningful connections with the intended audience. Alongside a solid understanding of HTML website design, I adeptly transform my creative prowess into impactful web interfaces. </p>
         </div>
       </div>
     </section>
-   <section id="contact" class="contact-me">
-      <div class="contact-content">
-    <img src="image/iconcontact.svg" alt="Contact Icon" class="contact-icon">
-	  
-    <h1>Contact Me</h1>
-	  
-    <div class="contact-info">
-      <h2>If you have any questions or inquiries,<br> feel free to get in touch with me.</h2>
-      <h3> <a href="mailto:yoanbouillon@gmail.com">yoanbouillon@gmail.com</a></h3>
-      <h3> <a href="tel:+14387971802"> 1-438-797-1802 </a></h3>
-    </div>
-  </div>
-</section>
-
-  </main>
+    <section id="contact" class="contact-me">
+      <div class="contact-content"> <img src="image/iconcontact.svg" alt="Contact Icon" class="contact-icon">
+        <h1>Contact Me</h1>
+        <div class="contact-info">
+          <h2>If you have any questions or inquiries,<br>
+            feel free to get in touch with me.</h2>
+          <h3> <a href="mailto:yoanbouillon@gmail.com">yoanbouillon@gmail.com</a></h3>
+          <h3> <a href="tel:+14387971802"> 1-438-797-1802 </a></h3>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
 <footer>
-  <div class="social-icons">
-    <a href="https://www.instagram.com/yoanbouillon/" target="_blank">
-      <img src="image/iconinsta.svg" alt="Instagram">
-    </a>
-    <a href="https://twitter.com/yoanbouillon" target="_blank">
-      <img src="image/iconx.svg" alt="Twitter">
-    </a>
-    <a href="https://www.behance.net/yoanbouillon" target="_blank">
-      <img src="image/iconbe.svg" alt="LinkedIn">
-    </a>
-  </div>
+  <div class="social-icons"> <a href="https://www.instagram.com/yoanbouillon/" target="_blank"> <img src="image/iconinsta.svg" alt="Instagram"> </a> <a href="https://twitter.com/yoanbouillon" target="_blank"> <img src="image/iconx.svg" alt="Twitter"> </a> <a href="https://www.behance.net/yoanbouillon" target="_blank"> <img src="image/iconbe.svg" alt="LinkedIn"> </a> </div>
 </footer>
-
-	
-  
-  <script>
+<script>
     var prevScrollPos = window.pageYOffset;
 
     window.addEventListener('scroll', function() {
@@ -184,10 +125,7 @@
       
       prevScrollPos = currentScrollPos;
     });
-  </script>
-	
-	  <script src="scripts.js"></script>
+  </script> 
+<script src="scripts.js"></script>
 </body>
 </html>
-
-

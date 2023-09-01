@@ -140,6 +140,9 @@ section {
   margin-bottom: 10rem; /* Adjust the value as needed */
 }
 
+.center {
+  text-align: center;
+}
 
 
 .main-image {
@@ -147,7 +150,8 @@ section {
   height: auto; /* Allow the height to adjust proportionally */
   display: block;
   margin: 0 auto; /* Center the image horizontally */
-  max-height: 100%; /* Ensure the image does not exceed its container's height */
+  max-height: 100%;
+  padding-top: 100px;/		
 }
 
 #contact h1 {
