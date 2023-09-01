@@ -659,9 +659,8 @@ body {
   margin: 0 auto;
   padding: 2rem;
 }
-
-/* Styles spécifiques pour les écrans larges */
-@media (min-width: 769px) {
+pécifiques pour les écrans larges */
+@media (min-width: 480px) {
   body {
     background-color: #f4f4f4;
     background-image: url("image/background-image.jpg");
