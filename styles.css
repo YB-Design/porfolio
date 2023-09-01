@@ -660,6 +660,7 @@ body {
   padding: 2rem;
 }
 pécifiques pour les écrans larges */
+
 @media (min-width: 480px) {
   body {
     background-color: #f4f4f4;
@@ -701,32 +702,3 @@ pécifiques pour les écrans larges */
 }
 
 /* Styles spécifiques pour les écrans plus petits (768px ou moins) */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    background-color: #f4f4f4;
-  }
-
-  .container {
-    padding: 1rem;
-  }
-
-  nav {
-    height: 60px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-left: 0;
-  }
-
-  .nav-links li a {
-    padding: 0.5rem 1rem;
-  }
-
-  .logo {
-    display: none;
-  }
-}
-
