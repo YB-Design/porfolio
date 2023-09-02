@@ -1,8 +1,8 @@
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   var elementsToHide = document.querySelectorAll('.hide-on-scroll');
   var scrollPosition = window.scrollY;
 
-  elementsToHide.forEach(function(element) {
+  elementsToHide.forEach(function (element) {
     var elementPosition = element.getBoundingClientRect().top + scrollPosition;
 
     if (elementPosition < window.innerHeight) {
@@ -11,34 +11,52 @@ window.addEventListener('scroll', function() {
   });
 });
 
-
-<script>
-  function scrollToSection(sectionId) {
-    const section = document.querySelector(`.${sectionId}`);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+function scrollToSection(sectionId) {
+  const section = document.querySelector(`.${sectionId}`);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
   }
-</script>
-
-
-
-
-----------------------------------------------
-
-// language-switcher.js
-
-function setLanguage(language) {
-    // Define a variable to hold the base URL of your website
-    var baseUrl = "https://yb-design.github.io/porfolio/";
-
-    // Set the language by updating the "href" attribute of the language switcher link
-    if (language === "en") {
-        document.getElementById("language-switcher").getElementsByTagName("a")[0].href = baseUrl + "index.html";
-    } else if (language === "fr") {
-        document.getElementById("language-switcher").getElementsByTagName("a")[0].href = baseUrl + "indexfr.html";
-    }
 }
 
+let languages = {
+  en: {
+    title: "YB DESIGN PORTFOLIO"
+  },
+  fr: {
+    title: "PORTFOLIO YB DESIGN"
+  }
+};
 
+// Function to change the language
+function changeLanguage(language) {
+  console.log("Changing language to:", language); // Debugging line
+  let languageSet = languages[language];
+  if (languageSet) {
+    Object.keys(languageSet).forEach((id) => {
+      let element = document.getElementById(id);
+      if (element) {
+        element.innerText = languageSet[id];
+      }
+    });
+  }
+}
 
+// Add event listeners to language switch links
+document.addEventListener("DOMContentLoaded", () => {
+  let storedLanguage = localStorage.getItem("language");
+  if (storedLanguage) {
+    changeLanguage(storedLanguage);
+  } else {
+    // Set a default language here if needed
+    changeLanguage("en"); // Default to English
+  }
+
+  document.querySelectorAll("[data-change-language]").forEach((element) => {
+    element.addEventListener("click", (event) => {
+      event.preventDefault();
+      let language = element.getAttribute("data-change-language");
+      localStorage.setItem("language", language);
+      changeLanguage(language);
+    });
+  });
+});
