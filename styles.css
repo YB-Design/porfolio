@@ -4,7 +4,7 @@
 /* Reset default margin and padding */
 
 
-/* S/* CSS Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -144,16 +144,24 @@ section {
   text-align: center;
 }
 
-
 .main-image {
-  width: 80%; /* Set the width to 80% of its container */
-  height: auto; /* Allow the height to adjust proportionally */
-  display: block;
-  margin: 0 auto; /* Center the image horizontally */
-  max-height: 100%;
-  padding-top: 100px;/		
+  position: relative;
+  max-width: 1080px; /* Limit the maximum width to 1080 pixels */
+  margin: 0 auto; /* Center horizontally within the container */
+  height: 100vh; /* Set the container height to 100% of the viewport height */
 }
 
+.main-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+}
 #contact h1 {
   font-size: 3em;
 }
@@ -407,11 +415,7 @@ nav {
 }
 
 /* Reset some default margin and padding for consistency */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -571,9 +575,7 @@ a {
   border-color: #cc3347; /* Change this to the color you want for page 6 */
 }
 
-.main-image img {
-  width: 80;
-	  
+
 	  
  .logo {
   display: flex;
