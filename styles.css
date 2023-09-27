@@ -429,6 +429,7 @@ header {
 
 .logo {
   padding: 10px;
+	width: 50%;
 }
 
 .nav-links {
@@ -752,4 +753,21 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
+}
+/* Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+    padding: 10px; /* Add padding around the logo */
+    object-fit: contain; /* Maintain the aspect ratio without stretching the image */
 }
